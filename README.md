@@ -33,13 +33,13 @@
 結論：本專題成功實現 Mini 5-Axis CNC 的數據採集（包括座標、轉速、通訊狀態等），並透過 IoT 技術完成異質設備整合。系統統一介面不僅涵蓋本組機台，亦整合了雷切機與兩台 3D 列印機資訊，達成全設備聯網化與數據整合之目標。
 
 ## 作業介紹
-1. Class Work #1 - Python
+1. Class Work #01 - Python
    > Transform the (x,y) format into the (r, theta) format
    
    $$ x = r\cos(\theta)$$
    $$ y = r\sin(\theta)$$
 
-2. Class Work #2 - Docker & OPC UA
+2. Class Work #02 - Docker & OPC UA
     > Construct an instance of the CncInterfaceType defined in VDW CNC information model standard. In this exercise, we only construct the nodes in the below table
    
    | Browse Name | Value |
@@ -49,7 +49,7 @@
    | VerdorRevision | \<Your student ID> |
    | Version | 1.0.0.0 |
 
-3. Class Work #3 - Ignition SCADA
+3. Class Work #03 - Ignition SCADA
     > Use Ignition SCADA to develop a dashboard for the classroom. 
    
    Docker Image: https://hub.docker.com/r/linchinte/ncume5204  
@@ -59,17 +59,17 @@
       2. Show values of temperature and CO2 concentration.
       3. Show the history in charts of temperature and CO2 concentration.
 
-4. Class Work #4 - SQLiteStudio
+4. Class Work #04 - SQLiteStudio
     > Subtract the time Start and End where ONo = "1000" from the table(tblFinOrderPos) in the database (FestoMES.db) and display it.
 
-5. Class Work #5 - RestFul API Using Python Flask
+5. Class Work #05 - RestFul API Using Python Flask
     > Suppose today we want to set up the stock material number (PNo) of the Festo factory
    
    1. Check the information of tblBufferPos
    2. Change the PNo of all the information of tblBufferPos to 210, and change the TimeStamp to the current time.
    3. (optional): You can update the contents of the PNo of the specified Pos number, for example, change the PNo of Pos 12 to 211.
 
-6. Class Work #6 - Node-RED
+6. Class Work #06 - Node-RED
 
     Docker Image: https://hub.docker.com/r/nodered/node-red  
     Run Container #1:`docker run -d -p 8888:8888 -p 4840:4840 --name notebook jupyter/minimal-notebook start.sh jupyter lab --LabApp.token=''`  
@@ -79,16 +79,16 @@
    1. The information published from OPC UA Server is received by Node Red and stored in the SQLite database (CW6.db) for a total of eight nodes at a time.
    2. Display the information in the Node Red dashboard, using three groups: Identification, Monitor and Notification, as shown in the results on the following page
 
-7. Class Work 7 - Jetson Nano
+7. Class Work #07 - Jetson Nano
     > Use jetson nano to make the motor rotate
 
-8. Class Work 8 - Pytorch Linear Regression
+8. Class Work #08 - Pytorch Linear Regression
     > Take P, v, m in data.csv as input data, Width, Depth, Height as output data, and train the model through Pytorch (the smaller the loss, the better).
 
-9.  Class Work 9 - Pytorch Classification
+9.  Class Work #09 - Pytorch Classification
     > data.csv containing coordinates (x, y), corresponding to labels (0, 1, 2), please train the model through Pytorch (the smaller the loss the better, the higher the prediction accuracy the better)
 
-10. Class Work 10 - GPU
+10. Class Work #10 - GPU
     > data.csv contains coordinates data (x, y), corresponding to labels (0, 1, 2)
 
     [YouTube - CW#10 GPU](https://youtu.be/qEU1Euz1pK0)
