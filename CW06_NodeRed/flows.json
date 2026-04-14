@@ -1,0 +1,675 @@
+[
+    {
+        "id": "4cd1c403d552d6db",
+        "type": "tab",
+        "label": "流程1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "babe30ddbcb28762",
+        "type": "OpcUa-Client",
+        "z": "4cd1c403d552d6db",
+        "endpoint": "44c2972bc1713b8c",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "folderName4PKI": "",
+        "name": "",
+        "x": 660,
+        "y": 140,
+        "wires": [
+            [
+                "82ad2e226e2b7111"
+            ]
+        ]
+    },
+    {
+        "id": "c5cbe6015822ee2c",
+        "type": "OpcUa-Item",
+        "z": "4cd1c403d552d6db",
+        "item": "ns=2;i=4",
+        "datatype": "String",
+        "value": "",
+        "name": "Location",
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "8633eeb72b4e9f5b"
+            ]
+        ]
+    },
+    {
+        "id": "736616f8072983e0",
+        "type": "OpcUa-Item",
+        "z": "4cd1c403d552d6db",
+        "item": "ns=2;i=9",
+        "datatype": "Double",
+        "value": "",
+        "name": "RoomTemperature",
+        "x": 470,
+        "y": 500,
+        "wires": [
+            [
+                "e70b8b94d86eae25"
+            ]
+        ]
+    },
+    {
+        "id": "fc73466fa0a80d8c",
+        "type": "OpcUa-Item",
+        "z": "4cd1c403d552d6db",
+        "item": "ns=2;i=10",
+        "datatype": "Int16",
+        "value": "",
+        "name": "CO2Concentration",
+        "x": 470,
+        "y": 440,
+        "wires": [
+            [
+                "277410f69be8faa8"
+            ]
+        ]
+    },
+    {
+        "id": "8b568e1d607a2028",
+        "type": "OpcUa-Item",
+        "z": "4cd1c403d552d6db",
+        "item": "ns=2;i=5",
+        "datatype": "String",
+        "value": "",
+        "name": "Manufacturer",
+        "x": 450,
+        "y": 260,
+        "wires": [
+            [
+                "c162cb0d84a15299"
+            ]
+        ]
+    },
+    {
+        "id": "53f2c3f7ea24c34b",
+        "type": "OpcUa-Item",
+        "z": "4cd1c403d552d6db",
+        "item": "ns=2;i=6",
+        "datatype": "String",
+        "value": "",
+        "name": "SerialNumber",
+        "x": 460,
+        "y": 320,
+        "wires": [
+            [
+                "50bbaef4d671be95"
+            ]
+        ]
+    },
+    {
+        "id": "867d75d937a8d08f",
+        "type": "OpcUa-Item",
+        "z": "4cd1c403d552d6db",
+        "item": "ns=2;i=7",
+        "datatype": "String",
+        "value": "",
+        "name": "SoftVersion",
+        "x": 450,
+        "y": 380,
+        "wires": [
+            [
+                "22f259eb85c6a515"
+            ]
+        ]
+    },
+    {
+        "id": "3d68495ee1636ecf",
+        "type": "OpcUa-Item",
+        "z": "4cd1c403d552d6db",
+        "item": "ns=2;i=12",
+        "datatype": "String",
+        "value": "",
+        "name": "RoomStatus",
+        "x": 450,
+        "y": 560,
+        "wires": [
+            [
+                "67f586d7ae5e7a9f"
+            ]
+        ]
+    },
+    {
+        "id": "7e90db4d7b5f3aaf",
+        "type": "OpcUa-Item",
+        "z": "4cd1c403d552d6db",
+        "item": "ns=2;i=3",
+        "datatype": "String",
+        "value": "",
+        "name": "BuildYear",
+        "x": 440,
+        "y": 140,
+        "wires": [
+            [
+                "babe30ddbcb28762"
+            ]
+        ]
+    },
+    {
+        "id": "8633eeb72b4e9f5b",
+        "type": "OpcUa-Client",
+        "z": "4cd1c403d552d6db",
+        "endpoint": "44c2972bc1713b8c",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "folderName4PKI": "",
+        "name": "",
+        "x": 660,
+        "y": 200,
+        "wires": [
+            [
+                "82ad2e226e2b7111"
+            ]
+        ]
+    },
+    {
+        "id": "c162cb0d84a15299",
+        "type": "OpcUa-Client",
+        "z": "4cd1c403d552d6db",
+        "endpoint": "44c2972bc1713b8c",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "folderName4PKI": "",
+        "name": "",
+        "x": 660,
+        "y": 260,
+        "wires": [
+            [
+                "82ad2e226e2b7111"
+            ]
+        ]
+    },
+    {
+        "id": "50bbaef4d671be95",
+        "type": "OpcUa-Client",
+        "z": "4cd1c403d552d6db",
+        "endpoint": "44c2972bc1713b8c",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "folderName4PKI": "",
+        "name": "",
+        "x": 660,
+        "y": 320,
+        "wires": [
+            [
+                "82ad2e226e2b7111"
+            ]
+        ]
+    },
+    {
+        "id": "22f259eb85c6a515",
+        "type": "OpcUa-Client",
+        "z": "4cd1c403d552d6db",
+        "endpoint": "44c2972bc1713b8c",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "folderName4PKI": "",
+        "name": "",
+        "x": 660,
+        "y": 380,
+        "wires": [
+            [
+                "82ad2e226e2b7111"
+            ]
+        ]
+    },
+    {
+        "id": "277410f69be8faa8",
+        "type": "OpcUa-Client",
+        "z": "4cd1c403d552d6db",
+        "endpoint": "44c2972bc1713b8c",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "folderName4PKI": "",
+        "name": "",
+        "x": 660,
+        "y": 440,
+        "wires": [
+            [
+                "82ad2e226e2b7111"
+            ]
+        ]
+    },
+    {
+        "id": "e70b8b94d86eae25",
+        "type": "OpcUa-Client",
+        "z": "4cd1c403d552d6db",
+        "endpoint": "44c2972bc1713b8c",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "folderName4PKI": "",
+        "name": "",
+        "x": 660,
+        "y": 500,
+        "wires": [
+            [
+                "82ad2e226e2b7111"
+            ]
+        ]
+    },
+    {
+        "id": "67f586d7ae5e7a9f",
+        "type": "OpcUa-Client",
+        "z": "4cd1c403d552d6db",
+        "endpoint": "44c2972bc1713b8c",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "folderName4PKI": "",
+        "name": "",
+        "x": 660,
+        "y": 560,
+        "wires": [
+            [
+                "82ad2e226e2b7111"
+            ]
+        ]
+    },
+    {
+        "id": "f5395233af7b777f",
+        "type": "inject",
+        "z": "4cd1c403d552d6db",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 360,
+        "wires": [
+            [
+                "7e90db4d7b5f3aaf",
+                "c5cbe6015822ee2c",
+                "8b568e1d607a2028",
+                "53f2c3f7ea24c34b",
+                "867d75d937a8d08f",
+                "fc73466fa0a80d8c",
+                "736616f8072983e0",
+                "3d68495ee1636ecf"
+            ]
+        ]
+    },
+    {
+        "id": "6371efb048de3869",
+        "type": "function",
+        "z": "4cd1c403d552d6db",
+        "name": "SQLITE_INSERT",
+        "func": "msg.topic = \"INSERT INTO testFor1019 VALUES (\"+\n    \"\\\"\"+ msg.payload.BuildYear + \"\\\",\" +\n    \"\\\"\" + msg.payload.Location + \"\\\",\" +\n    \"\\\"\" + msg.payload.Manufacturer + \"\\\",\" +\n    \"\\\"\" + msg.payload.SerialNumber + \"\\\",\" +\n    \"\\\"\" + msg.payload.SoftVersion + \"\\\",\" +\n           msg.payload.RoomTemperature + \",\" +\n           msg.payload.CO2Concentration[1] + \",\" +\n    \"\\\"\" + msg.payload.RoomStatus + \"\\\")\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 440,
+        "wires": [
+            [
+                "314fc49251f43acc"
+            ]
+        ]
+    },
+    {
+        "id": "314fc49251f43acc",
+        "type": "sqlite",
+        "z": "4cd1c403d552d6db",
+        "mydb": "61e85ca24ab69f83",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "sqlite",
+        "x": 910,
+        "y": 520,
+        "wires": [
+            [
+                "9e0f6a238326c98a"
+            ]
+        ]
+    },
+    {
+        "id": "82ad2e226e2b7111",
+        "type": "join",
+        "z": "4cd1c403d552d6db",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "browseName",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "1",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 910,
+        "y": 360,
+        "wires": [
+            [
+                "6371efb048de3869",
+                "bcf1551057e1e013",
+                "ae53bab77437b152",
+                "294001d57f92fd86",
+                "186fbb8319e6d62f",
+                "db5c3cf5be01c921",
+                "929465a34a0f94f5",
+                "06df3af5e9a58d5c",
+                "f36f427360008cd3",
+                "dc8164e7852b8e6d"
+            ]
+        ]
+    },
+    {
+        "id": "9e0f6a238326c98a",
+        "type": "debug",
+        "z": "4cd1c403d552d6db",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "bcf1551057e1e013",
+        "type": "ui_text",
+        "z": "4cd1c403d552d6db",
+        "group": "ee3736467df9d70b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Location",
+        "format": "{{msg.payload.Location}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1160,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "186fbb8319e6d62f",
+        "type": "ui_text",
+        "z": "4cd1c403d552d6db",
+        "group": "ee3736467df9d70b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Manufacturer",
+        "format": "{{msg.payload.Manufacturer}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1170,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "ae53bab77437b152",
+        "type": "debug",
+        "z": "4cd1c403d552d6db",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "db5c3cf5be01c921",
+        "type": "ui_text",
+        "z": "4cd1c403d552d6db",
+        "group": "ee3736467df9d70b",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "SerialNumber",
+        "format": "{{msg.payload.SerialNumber}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1180,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "929465a34a0f94f5",
+        "type": "ui_text",
+        "z": "4cd1c403d552d6db",
+        "group": "ee3736467df9d70b",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "SoftVersion",
+        "format": "{{msg.payload.SoftVersion}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1350,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "06df3af5e9a58d5c",
+        "type": "ui_text",
+        "z": "4cd1c403d552d6db",
+        "group": "3eb5eace41db0921",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "CO2Concentration",
+        "format": "{{msg.payload.CO2Concentration[1]}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1370,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "f36f427360008cd3",
+        "type": "ui_text",
+        "z": "4cd1c403d552d6db",
+        "group": "3eb5eace41db0921",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "RoomTemperature",
+        "format": "{{msg.payload.RoomTemperature}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1370,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "dc8164e7852b8e6d",
+        "type": "ui_text",
+        "z": "4cd1c403d552d6db",
+        "group": "4bf222f157d9b464",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "RoomStatus",
+        "format": "{{msg.payload.RoomStatus}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1350,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "294001d57f92fd86",
+        "type": "ui_text",
+        "z": "4cd1c403d552d6db",
+        "group": "ee3736467df9d70b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "BuildYear",
+        "format": "{{msg.payload.BuildYear}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1160,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "44c2972bc1713b8c",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://172.17.0.2:4840/ncume/me5204/server/",
+        "secpol": "None",
+        "secmode": "None",
+        "none": true,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "61e85ca24ab69f83",
+        "type": "sqlitedb",
+        "db": "/data/CW6.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "ee3736467df9d70b",
+        "type": "ui_group",
+        "name": "Identification",
+        "tab": "07e31ca996911a2f",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3eb5eace41db0921",
+        "type": "ui_group",
+        "name": "Monitor",
+        "tab": "07e31ca996911a2f",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4bf222f157d9b464",
+        "type": "ui_group",
+        "name": "Notification",
+        "tab": "07e31ca996911a2f",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "07e31ca996911a2f",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
