@@ -52,8 +52,8 @@
 3. Class Work #3 - Ignition SCADA
     > Use Ignition SCADA to develop a dashboard for the classroom. 
    
-   Docker Image: https://hub.docker.com/r/linchinte/ncume5204
-   Run Container: `docker run -p 8888:8888 -p 4840:4840 linchinte/ncume5204:1.0`
+   Docker Image: https://hub.docker.com/r/linchinte/ncume5204  
+   Run Container: `docker run -p 8888:8888 -p 4840:4840 linchinte/ncume5204:1.0`  
    There are the specifications for this homework:
       1. Display the basic information of the classroom.
       2. Show values of temperature and CO2 concentration.
@@ -70,10 +70,12 @@
    3. (optional): You can update the contents of the PNo of the specified Pos number, for example, change the PNo of Pos 12 to 211.
 
 6. Class Work #6 - Node-RED
-    Docker Image: https://hub.docker.com/r/nodered/node-red
-    Run Container #1:`docker run -d -p 8888:8888 -p 4840:4840 --name notebook jupyter/minimal-notebook start.sh jupyter lab --LabApp.token=''`
-    Run Container #2:`docker run -d -p 1880:1880 -v c:/nodered:/data --name nodered --link notebook:notebook nodered/node-red`
+
+    Docker Image: https://hub.docker.com/r/nodered/node-red  
+    Run Container #1:`docker run -d -p 8888:8888 -p 4840:4840 --name notebook jupyter/minimal-notebook start.sh jupyter lab --LabApp.token=''`  
+    Run Container #2:`docker run -d -p 1880:1880 -v c:/nodered:/data --name nodered --link notebook:notebook nodered/node-red`  
     Execute command: `docker exec it nodered /bin/bash`
+
    1. The information published from OPC UA Server is received by Node Red and stored in the SQLite database (CW6.db) for a total of eight nodes at a time.
    2. Display the information in the Node Red dashboard, using three groups: Identification, Monitor and Notification, as shown in the results on the following page
 
@@ -83,7 +85,7 @@
 8. Class Work 8 - Pytorch Linear Regression
     > Take P, v, m in data.csv as input data, Width, Depth, Height as output data, and train the model through Pytorch (the smaller the loss, the better).
 
-9. Class Work 9 - Pytorch Classification
+9.  Class Work 9 - Pytorch Classification
     > data.csv containing coordinates (x, y), corresponding to labels (0, 1, 2), please train the model through Pytorch (the smaller the loss the better, the higher the prediction accuracy the better)
 
 10. Class Work 10 - GPU
@@ -96,7 +98,7 @@
     `docker run -p 8888:8888 -p 5000:5000 jupyter/minimal-notebook start.sh jupyter lab --LabApp.token=''`
     3. Open Notebook at 127.0.0.1:8888/lab
     4. Copy or Clone my_inputs.csv & my_labels.csv into workspace
-    5. you can let the cloud start training the model through flask, and display the loss
+    5. You can let the cloud start training the model through flask, and display the loss
     6. You can use the model on the cloud through flask
 
 ## 開發環境與需求
